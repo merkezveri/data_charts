@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,QAGI,oBAAiB,CAAjB,gBAAiB,CAAjB,iBACJ,CAEA,OACI,UACJ,CAEA,KACI,wBACJ","file":"main.4121638f.chunk.css","sourcesContent":[".dashed {\n    border-bottom-style: dashed;\n    border-color: #333333;\n    border-width: 2px;\n}\n\n.image {\n    width: 72px;\n}\n\nbody {\n    background-color: #f2f2f2;\n}"]}
