@@ -8,7 +8,7 @@ import data from "../data1";
 
 function ChartBarOne() {
     return (
-        <div className="container" style={{height: "20uv"}}>
+        <div className="container" style={{height: "50vh"}}>
             <ResponsiveContainer>
                 <BarChart
                     width={500}
