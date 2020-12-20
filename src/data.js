@@ -1,10 +1,3 @@
-import React, { PureComponent } from 'react';
-
-import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Brush,
-  AreaChart, Area,ResponsiveContainer
-} from 'recharts';
-
 const data = [
     {
       Aylar: "2019 01",
@@ -96,30 +89,4 @@ const data = [
     }
   ];
 
-function Chart() {
-
-    return (
-        <div className="container">
-            <h4>Tüketici Güven Endeksi</h4>
-            <ResponsiveContainer>
-                <LineChart
-
-                data={data}
-                syncId="anyId"
-                margin={{
-                    top: 10, right: 30, left: 0, bottom: 0,
-                }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="Aylar" />
-                    <YAxis />
-                    <Tooltip />
-                    <Line type="monotone" dataKey="Değişim" stroke="#8884d8" fill="#8884d8" />
-                    <Brush />
-                </LineChart>
-            </ResponsiveContainer>
-      </div>
-    )
-}
-
-export default Chart
+  export default data;
