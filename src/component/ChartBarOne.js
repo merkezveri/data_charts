@@ -3,27 +3,26 @@ import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,ResponsiveContainer,Brush
   } from 'recharts';
 
-import data from "../data1";
 
 
-function ChartBarOne() {
+function ChartBarOne(props) {
     return (
         <div className="container" style={{height: "50vh"}}>
             <ResponsiveContainer>
                 <BarChart
                     width={500}
                     height={300}
-                    data={data}
+                    data={props.data}
                     margin={{
                     top: 5, right: 30, left: 20, bottom: 5,
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="Aylar" />
+                    <XAxis dataKey={props.xaxis} />
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="Oran" fill="#413ea0" background={{ fill: '#eee' }} />
+                    <Bar dataKey={props.yaxis} fill="#413ea0" background={{ fill: '#eee' }} />
                     <Brush />
 
                 </BarChart>

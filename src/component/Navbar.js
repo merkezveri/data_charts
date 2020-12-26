@@ -8,7 +8,6 @@ function Navbar() {
             <nav class="navbar navbar-dark bg-dark border-bottom border-2 mb-4">
                 <div className="container justify-content-center">
                     <a class="navbar-brand" href="/"><img src={logo} className="image mb-1" /></a>
-                    
                 </div>
             </nav>
         </header>
